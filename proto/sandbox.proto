@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package sandbox;
+
+message getLibraryNameParam {}
+
+message libraryName {
+  string name = 1;
+}
+
+service getLibralyNameService {
+  rpc getLibralyName(getLibraryNameParam) returns (libraryName) {}
+}
